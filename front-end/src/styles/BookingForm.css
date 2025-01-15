@@ -1,0 +1,106 @@
+/* BookingForm.css */
+.react-calendar__tile {
+    border: 1px solid #ddd;
+    background: white;
+    color: #333;
+}
+
+.react-calendar__tile:disabled {
+    background: #ddd;
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.react-calendar__tile.full-day-booked {
+    background-color: #FF6B6B;
+    color: white;
+    font-weight: bold;
+}
+
+.react-calendar__tile.half-day-booked-morning {
+    background-color: #FFA500;
+    color: white;
+    font-weight: bold;
+}
+
+.react-calendar__tile.half-day-booked-afternoon {
+    background-color: #6495ED;
+    color: white;
+    font-weight: bold;
+}
+
+.react-calendar__tile:hover {
+    background-color: #f0f8ff;
+    border-color: #888;
+}
+/* BookingForm.css */
+.react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa; /* Light background for better visibility */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.react-calendar__navigation button {
+    color: #333;
+    font-weight: bold;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.react-calendar__navigation button:hover {
+    background-color: #e9ecef; /* Subtle hover effect */
+    border-radius: 3px;
+}
+
+.react-calendar__navigation span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.react-calendar {
+    position: relative;
+    z-index: 1; /* Adjust to ensure it appears above other elements */
+}
+.react-calendar__navigation {
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: flex !important;
+}
+.react-calendar__navigation:hover {
+    background-color: inherit; /* No hover change */
+}
+.react-calendar__month-view__weekdays {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #333; /* Text color */
+    background-color: #f0f0f0; /* Background color */
+    border-bottom: 1px solid #ddd;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+    text-align: center;
+    flex: 1;
+}
+.full-day-booked {
+    background-color: #ff4d4d; /* Red for fully booked days */
+    color: white;
+    pointer-events: none;
+}
+
+.morning-booked {
+    background-color: #ffd966; /* Yellow for morning booked */
+    color: black;
+}
+
+.afternoon-booked {
+    background-color: #66b3ff; /* Blue for afternoon booked */
+    color: white;
+}
